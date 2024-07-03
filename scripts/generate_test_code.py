@@ -1271,6 +1271,7 @@ def main():
 
 if __name__ == "__main__":
     try:
+        raise Exception("FooBar")
         main()
     except GeneratorInputError as err:
         sys.exit("%s: input error: %s" %
